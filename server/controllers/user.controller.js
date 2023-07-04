@@ -5,7 +5,8 @@ const jwt = require('jsonwebtoken');
 class UserController {
     async register(req, res) {
         try {
-            const user = new User(req.body);
+            console.log(req.body)
+            const user = new User(req.body)
             await user.save();
 
             const token = jwt.sign({ _id: user._id }, process.env.SECRET_KEY);
@@ -18,7 +19,8 @@ class UserController {
 
             res.status(201).json({ msg: 'Successfully created user', user, token });
         } catch (error) {
-            res.status(500).json({ error: 'Failed to register user' });
+            console.log(error)
+            res.status(500).json(error);
         }
     }
 

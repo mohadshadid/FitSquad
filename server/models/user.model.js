@@ -29,19 +29,17 @@ const UserSchema = new mongoose.Schema({
         required: [true, "Password is required"],
         minlength: [8, "Password must be at least 8 characters long!"]
     },
-    confirmPassword: {
-        type: String,
-        required: [true, 'Confirm Password is required'],
-        validate: {
-            validator: function (val) {
-                return val === this.password;
-            },
-            message: 'Passwords do not match!',
-        },
-    },
 },
     { timestamps: true }
 )
+
+UserSchema.virtual("confirmPassword")
+    .get(function () {
+        return this._confirmPassword;
+    })
+    .set(function (value) {
+        this._confirmPassword = value
+    })
 
 UserSchema.pre('validate', function (next) {
     if (this.password !== this.confirmPassword) {
@@ -61,5 +59,4 @@ UserSchema.pre('save', function (next) {
             next(err);
         })
 })
-
-module.exports.User = mongoose.model('User', UserSchema);
+module.exports = mongoose.model('User', UserSchema);

@@ -34,13 +34,17 @@ const Register = () => {
                 setErrors([]);
                 navigate('/');
             })
-            .catch((error) => {
-                const errorResponse = error.response.data.errors;
+            .catch((res) => {
+
+                const errorResponse = res.response.data.errors;
+                console.log(errorResponse)
                 const errorArr = [];
                 for (const key of Object.keys(errorResponse)) {
                     errorArr.push(errorResponse[key].message);
+                    console.log(errorResponse[key])
                 }
                 setErrors(errorArr);
+
             })
     }
 
@@ -48,11 +52,11 @@ const Register = () => {
         <div>
             <h2>Registration</h2>
             {errors.length > 0 && (
-                <ul>
+                <p>
                     {errors.map((error, index) => (
-                        <li key={index}>{error}</li>
+                        <p key={index}>{error}</p>
                     ))}
-                </ul>
+                </p>
             )}
             <form onSubmit={handleSubmit}>
                 <div>
@@ -61,7 +65,7 @@ const Register = () => {
                         type="text"
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
-                        required
+                    // required
                     />
                 </div>
                 <div>
@@ -70,7 +74,7 @@ const Register = () => {
                         type="text"
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
-                        required
+                    // required
                     />
                 </div>
                 <div>
@@ -79,7 +83,7 @@ const Register = () => {
                         type="email"
                         value={emailAddress}
                         onChange={(e) => setEmailAddress(e.target.value)}
-                        required
+                    // required
                     />
                 </div>
                 <div>
@@ -88,7 +92,7 @@ const Register = () => {
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
-                        required
+                    // required
                     />
                 </div>
                 <div>
@@ -97,7 +101,7 @@ const Register = () => {
                         type="password"
                         value={confirmPassword}
                         onChange={(e) => setConfirmPassword(e.target.value)}
-                        required
+                    // required
                     />
                 </div>
                 <div>

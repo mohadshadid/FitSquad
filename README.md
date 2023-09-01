@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# FitSquad
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A MERN appliction collaboration
 
-## Available Scripts
+## Overview 
+**FitSquad**  FitSquad is not just another generic fitness website; it is a dynamic and interactive platform designed to inspire, motivate, and empower its users. The core concept revolves around building a virtual community of like-minded individuals with a shared passion for fitness. Users can create personalized profiles, connect with friends, and join or create fitness groups based on specific interests or fitness goals.
 
-In the project directory, you can run:
+## Table of Contents
+- [Overview](#overview)
+- [User Features](#Owners-features)
+- [Contributors](#contributors)
+- [Technologies Used](#technologies-used)
+- [Project Description](#project-description)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Owners Features
+- **Owners Profiles**: Owners can create  profiles that allow them to manage their training , view their Personalized Fitness Plans.
+- **Training Guidance**: FitSquad takes personalization a step further with expert training guidance.
+- **Activity Tracking**: To support users on their fitness journey, FitSquad integrates activity tracking into their profiles. Members can log their workouts.
+- **Personalized Recommendations**: By analyzing user activity and preferences, FitSquad's algorithms provide personalized recommendations. Whether it's suggesting new workout plans, nutrition advice, or upcoming fitness events.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Contributors
+The success of this project was made possible by :
+- [Shatha Morales](https://github.com/ShathaMorales).
+-  [Mohammed Shadid](https://github.com/mohadshadid).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+ ### Scrum master 
+  - Mr. [Amin Eid](https://github.com/amin-eid).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+We extend our sincere appreciation to every contributor for their unwavering dedication, perseverance, and teamwork
+If you wish to be part of this ongoing project, we encourage you to connect with us or submit pull requests. We warmly welcome any      improvements, bug fixes, or innovative features that can elevate the application to new heights.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+ <hr>
+ 
+# Technologies Used:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  [![Tools](https://skillicons.dev/icons?i=react,materialui,js,css,bootstrap,mongodb,postman&perline=7)](https://skillicons.dev)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - [imagekit API](https://imagekit.io/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+ <hr>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Project Description
 
-## Learn More
+ Main Page: Upon visiting our website's main page, users are greeted with an About Us section that includes both the Register and Sign In buttons in the top navigation bar.
+ 
+  ### Main Page
+ ![Main Page ](https://ik.imagekit.io/shadid/one.png?updatedAt=1690900218871)
+  ![Main Page ](https://ik.imagekit.io/shadid/one-1.png?updatedAt=1690900214058)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Register Page
+- Register Page:  For first-time users, the Registration page provides an intuitive sign-up process. React validation is implemented to ensure input integrity.
+   ![Sign up](https://ik.imagekit.io/shadid/tow.png?updatedAt=1690900215542)
+  
+### Sign In Page
+  - Sign In Page: If you are already a user, you will be directed to the Sign In page. Upon successful registration or signing in.
+![Sign in page](https://ik.imagekit.io/shadid/tow-1.png?updatedAt=1690900213426)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Add Exercise Page
+- Add Exercise: The personal trainer can add the exercises
+   ![Add Exercise](https://ik.imagekit.io/shadid/three.png?updatedAt=1690900210019)
 
-### Code Splitting
+  ### Show Exercises Page
+- Show Exercises: The user can show the exercises
+   ![Show Exercises](https://ik.imagekit.io/shadid/five.png?updatedAt=1690900209120)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Details of Exercise Page
+- Details of Exercise: The user can show the details of exercise
+   ![Show Exercise](https://ik.imagekit.io/shadid/four.png?updatedAt=1690900205250)
 
-### Analyzing the Bundle Size
+  ### Delete and Edit the Exercise Page
+- Delete and Edit the Exercise: The personal trainer can delete or edit the exercise
+   ![Show Exercise](https://ik.imagekit.io/shadid/six.png?updatedAt=1690900209536)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
